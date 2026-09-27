@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Dynamic Island</string>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>label</key><string>Enable Dynamic Island</string>
+			<key>key</key><string>DIEnabled</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>footerText</key><string>When off, nothing is drawn no matter what's active - calls, media, timers, etc.</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Appearance</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Scale</string>
+			<key>key</key><string>DIScale</string>
+			<key>min</key><real>0.7</real>
+			<key>max</key><real>1.3</real>
+			<key>default</key><real>1.0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Opacity</string>
+			<key>key</key><string>DIOpacity</string>
+			<key>min</key><real>0.4</real>
+			<key>max</key><real>1.0</real>
+			<key>default</key><real>1.0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Position</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Horizontal Offset</string>
+			<key>key</key><string>DIOffsetX</string>
+			<key>min</key><real>-60</real>
+			<key>max</key><real>60</real>
+			<key>default</key><real>0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Vertical Offset</string>
+			<key>key</key><string>DIOffsetY</string>
+			<key>min</key><real>-20</real>
+			<key>max</key><real>20</real>
+			<key>default</key><real>0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Color</string>
+			<key>footerText</key><string>Applied to the compact pill and the incoming-call capsule. Accept/decline buttons and the minimized-call pill keep their system colors.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Red</string>
+			<key>key</key><string>DIColorRed</string>
+			<key>min</key><real>0</real>
+			<key>max</key><real>255</real>
+			<key>default</key><real>0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Green</string>
+			<key>key</key><string>DIColorGreen</string>
+			<key>min</key><real>0</real>
+			<key>max</key><real>255</real>
+			<key>default</key><real>0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSliderCell</string>
+			<key>label</key><string>Blue</string>
+			<key>key</key><string>DIColorBlue</string>
+			<key>min</key><real>0</real>
+			<key>max</key><real>255</real>
+			<key>default</key><real>0</real>
+			<key>defaults</key><string>com.yourname.dynamicislandprefs</string>
+			<key>PostNotification</key><string>com.yourname.dynamicisland/prefschanged</string>
+		</dict>
+
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>footerText</key><string>Dynamic Island tweak - settings apply live, no respring needed.</string>
+		</dict>
+
+	</array>
+</dict>
+</plist>

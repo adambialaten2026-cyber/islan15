@@ -1,0 +1,9 @@
+Package: com.yourname.dynamicisland
+Name: Dynamic Island
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Brings an iPhone 14/15 Pro-style Dynamic Island pill (media + calls) to any jailbroken iPhone.
+Maintainer: Your Name
+Author: Your Name
+Section: Tweaks
+Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), preferenceloader
